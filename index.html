@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
 </head>
@@ -12,87 +13,89 @@
     <div id="container">
         <!-- aside -->
         <aside id="menu">
-            <!-- logo -->
-            <section id="logo">
-                <img src="img/logo.svg" alt="logo Spotify">
-            </section>
-            <!-- nav_menu -->
-            <nav id="nav-menu">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="img/home.svg" alt="home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/search.svg" alt="cerca">
-                            Cerca
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/libreria.svg" alt="libreria">
-                            La tua libreria
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- create_playlist -->
-            <section id="create-playlist">
-                <h3>
-                    PLAYLIST
-                </h3>
-                <a href="#">
-                    <div id="btn-plus">
-                        +
-                    </div>
-                    <div>
-                        Crea Playlist
-                    </div>
-                </a>
-            </section>
-            <!-- lista_nome_playlist -->
-            <section id="list-name-playlist">
-                <ul>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                </ul>
-            </section>
+            <div class="aside-top">
+                <!-- logo -->
+                <section id="logo">
+                    <img src="img/logo.svg" alt="logo Spotify">
+                </section>
+                <!-- nav_menu -->
+                <nav id="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/home.svg" alt="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/search.svg" alt="cerca">
+                                Cerca
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="libreria">
+                                La tua libreria
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- create_playlist -->
+                <section id="create-playlist">
+                    <h3>
+                        PLAYLIST
+                    </h3>
+                    <a href="#">
+                        <div id="btn-plus">
+                            +
+                        </div>
+                        <div>
+                            Crea Playlist
+                        </div>
+                    </a>
+                </section>
+                <!-- lista_nome_playlist -->
+                <section id="list-name-playlist">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             <!-- footer_menu -->
             <section id="footer_menu">
                 <div id="download">
@@ -126,6 +129,73 @@
     <!-- Footer -->
     <footer id="player">
 
+        <!-- brano -->
+        <section id="brano">
+            <a href="#">
+                <img src="img/sinister.jpeg" alt="Sinister brano">
+                <div>
+                    Sinister 
+                    <br> 
+                    <span>
+                        Brano Nome
+                    </span>
+                </div>
+            </a>
+            <a href="#">
+                <i class="far fa-heart"></i>
+            </a>
+            <a href="#">
+                <i class="far fa-folder"></i>
+            </a>
+        </section>
+
+        <!-- nav-player -->
+        <section id="nav-player">
+            <div id="nav-player-top">
+                <a href="#">
+                    <i class="fas fa-random"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-step-backward"></i>
+                </a>
+                <a href="#">
+                    <i class="far fa-play-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-step-forward"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-redo-alt"></i>
+                </a>
+            </div>
+            <div id="nav-player-down">
+                <span>
+                    0:25
+                </span>
+                <div class="progressbar">
+                    <div></div>
+                </div>
+                <span>
+                    4:35
+                </span>
+            </div>
+        </section>
+
+        <!-- volume -->
+        <section id="volume">
+            <a href="#">
+                <i class="fas fa-list"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-desktop"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-volume-up"></i>
+            </a>
+            <div class="progressbar">
+                <div></div>
+            </div>
+        </section>
     </footer>
 
 </body>
