@@ -411,7 +411,7 @@ body {
     align-items: center;
 }
 
-#brano a:first-child {
+#brano > a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -419,12 +419,17 @@ body {
 }
 
 #brano a:nth-child(2) {
-    margin-left: 60px;
+    margin-left: 15px;
     margin-right: 15px;
 }
 
-#brano a:nth-child(2), #brano a:nth-child(3) {
+#brano div a:nth-child(1), #brano a:nth-child(2) {
     color: #7e7e7e;
+}
+
+.container-flex {
+    display: flex;
+    margin-left: 40px;
 }
 
 #brano img{
@@ -533,11 +538,15 @@ body {
     margin: 0 10px;
 }
 
+.logo-sm {
+    display: none;
+}
+
 /* Visualizzazione spotify-md */
 
 @media all and (min-width: 1125px) and (max-width: 1634px) {
     #main-nav ul {
-        max-width: 760px;
+        width: auto;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -547,24 +556,142 @@ body {
 
 @media all and (min-width: 870px) and (max-width: 1124px) {
     #main-nav ul {
-        max-width: 530px;
+        width: auto;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     #nav-player {
         width: 45%;
+    }
+
+    .container-flex {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 /* Visualizzazione Mobile (xs) */
 
 @media all and (max-width: 869px) {
+    #menu {
+        width: 45px;
+        padding: 0 0 0 7px;
+    }
+
+    #contenuto_principale, #upgrade {
+        width: calc(100% - 45px);
+    }
+
     #main-nav ul {
-        max-width: 530px;
+        width: auto;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /* footer */
+    #volume {
+        width: 250px;
+        flex-shrink: 3;
+    }
+
+    #volume a {
+        margin: 0 6px;
+    }
+
     #nav-player {
-        width: 45%;
+        width: auto;
+        flex-shrink: 6;
+    }
+
+    #brano {
+        width: auto;
+        flex-shrink: 3;
+    }
+
+    #brano a div {
+        width: auto;
+    }
+
+    #brano img {
+        height: 40px;
+        width: 40px;
+        margin: 0px 8px;
+    }
+
+    .container-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    /* sezione menu sx */
+
+    #logo {
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    #nav-menu {
+        margin-top: 20px;
+    }
+
+    #nav-menu ul li:first-child {
+        border-left: 0; 
+        margin-left: 0; 
+        padding-left: 0; 
+    }
+
+    #create-playlist {
+        display: none;
+    }
+
+    #list-name-playlist {
+        display: none;
+    }
+
+    #download {
+        border-bottom: 0;
+    }
+
+    .logo-sm {
+        display: block;
+    }
+
+    .logo-lg {
+        display: none;
+    }
+
+    #nav-menu span {
+        display: none;
+    }
+
+    /* footer menu */
+    #footer_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-right: 2px;
+    }
+
+    #footer_menu span {
+        display: none;
+    }
+
+    #download {
+        width: auto;
+    }
+
+    .aside-top {
+        height: calc(100vh - 200px);
+    }
+
+    .progressbar {
+        width: 70%;
+    }
+
+    #recently-played, #musica-suggerita, #artisti-popolari {
+        margin: 30px 0 0 30px;
     }
 }

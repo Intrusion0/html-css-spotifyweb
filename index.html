@@ -17,7 +17,8 @@
             <div class="aside-top">
                 <!-- logo -->
                 <section id="logo">
-                    <img src="img/logo.svg" alt="logo Spotify">
+                    <img src="img/logo.svg" alt="logo Spotify" class="logo-lg">
+                    <img src="img/logo-small.svg" alt="logo Spotify" class="logo-sm">
                 </section>
                 <!-- nav_menu -->
                 <nav id="nav-menu">
@@ -25,19 +26,19 @@
                         <li>
                             <a href="#">
                                 <img src="img/home.svg" alt="home">
-                                Home
+                                <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/search.svg" alt="cerca">
-                                Cerca
+                                <span>Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/libreria.svg" alt="libreria">
-                                La tua libreria
+                                <span>La tua libreria</span>
                             </a>
                         </li>
                     </ul>
@@ -102,13 +103,17 @@
                 <div id="download">
                     <a href="#">
                         <img src="img/download.svg" alt="download">
-                        Installa app
+                        <span>
+                            Installa app
+                        </span>
                     </a>
                 </div>
                 <div id="profile">
                     <a href="#">
                         <img src="img/profile.svg" alt="profile">
-                        John Doe
+                        <span>
+                            John Doe
+                        </span>
                     </a>
                 </div>
             </section>
@@ -317,12 +322,14 @@
                     </span>
                 </div>
             </a>
-            <a href="#">
-                <i class="far fa-heart"></i>
-            </a>
-            <a href="#">
-                <i class="far fa-folder"></i>
-            </a>
+            <div class="container-flex">
+                <a href="#">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="#">
+                    <i class="far fa-folder"></i>
+                </a>
+            </div>
         </section>
 
         <!-- nav-player -->
