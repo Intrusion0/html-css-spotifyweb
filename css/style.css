@@ -30,7 +30,7 @@ body {
 
 /* aside-top */
 .aside-top {
-    height: calc(100vh - 205px);
+    height: calc(100vh - 235px);
 }
 
 /* logo */
@@ -64,6 +64,14 @@ body {
     color: #626262;
 }
 
+#nav-menu ul li a:hover {
+    color: white;
+}
+
+#nav-menu ul li a:hover img{
+    filter: opacity(1);
+}
+
 #nav-menu ul li:first-child a{
     color: white;
 }
@@ -81,6 +89,14 @@ body {
 /* create_playlist */
 #create-playlist {
     margin-top: 30px;
+}
+
+#create-playlist a:hover div:last-child{
+    color: white;
+}
+
+#create-playlist a:hover div:first-child{
+    background-color: white;
 }
 
 #create-playlist h3{
@@ -122,6 +138,10 @@ body {
     color: #626262;
 }
 
+#list-name-playlist ul li a:hover {
+    color: white;
+}
+
 #list-name-playlist ul li {
     margin-bottom: 20px;
 }
@@ -129,6 +149,7 @@ body {
 /* footer_menu */
 #footer_menu {
     background-color: black;
+    padding: 15px 0 10px;
 }
 
 #footer_menu a{
@@ -136,6 +157,14 @@ body {
     align-items: center;
     text-decoration: none;
     color: #626262;
+}
+
+#footer_menu a:hover{
+    color: white;
+}
+
+#footer_menu a:hover img{
+    filter: opacity(1);
 }
 
 #download {
@@ -199,6 +228,11 @@ body {
     font-size: 15px;
 }
 
+#upgrade a:hover .btn {
+    font-size: 17px;
+    margin-right: 0;
+}
+
 /* footer */
 #player {
     display: flex;
@@ -238,6 +272,9 @@ body {
 }
 
 #brano a div {
+    display: flex;
+    flex-direction: column;
+    width: 85px;
     line-height: 15px;
     font-size: 15px;
 }
@@ -247,9 +284,13 @@ body {
     font-size: 13px;
 }
 
-#brano a div span {
-    color: #7e7e7e;
-    font-size: 13px;
+#brano a div span:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#brano a > i:hover {
+    color: white;
 }
 
 /* nav-player */
@@ -277,6 +318,10 @@ body {
     font-size: 35px;
 }
 
+#nav-player-top a:nth-child(3):hover i{
+    font-size: 36px;
+}
+
 /* nav-player-down */
 #nav-player-down {
     display: flex;
@@ -297,6 +342,13 @@ body {
     width: 20%;
     padding: 3px; 
     border-radius: 3px;
+}
+
+.progressbar:hover > div {
+    /* display: flex;
+    justify-content: flex-end; */
+    background-color: #adff2f;
+    /* content: '\U+26AB'; */
 }
 
 #nav-player-down span {
