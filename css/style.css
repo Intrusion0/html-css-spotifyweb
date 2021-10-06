@@ -75,6 +75,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #626262;
+    transition: all .8s;
 }
 
 #nav-menu ul li a:hover {
@@ -93,6 +94,7 @@ body {
     width: 30px;
     filter: opacity(0.5);
     margin-right: 5px;
+    transition: all .8s;
 }
 
 #nav-menu ul li:first-child a img {
@@ -239,13 +241,14 @@ body {
     background-color: #080b12;
     border: solid 1px white;
     border-radius: 26px;
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 15px;
+    transition: all .8s;
 }
 
 #upgrade a:hover .btn {
     font-size: 17px;
-    margin-right: 0;
+    margin-right: 15px;
 }
 
 /* main-nav */
@@ -282,6 +285,7 @@ body {
 #main-nav ul li a {
     text-decoration: none;
     color: #66686e;
+    transition: all .5s;
 }
 
 #main-nav ul li a:hover {
@@ -323,8 +327,8 @@ body {
 
 .container_img {
     position: relative;
-    height: 235px;
     width: 235px;
+    text-align: center;
 }
 
 .overlay {
@@ -335,7 +339,7 @@ body {
     left: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: all .5s;
+    transition: all .8s;
 }
 
 .container_img:hover .overlay {
@@ -371,22 +375,6 @@ body {
 .row div a {
     text-decoration: none;
 }
-
-.row.first div a:hover img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: opacity(.5);
-}
-
-/* .row div a:hover img .fa-play-circle::before{
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    content: "\f144";
-    font-weight: 900;
-    font-size: 40px;
-    color: white;
-} */
 
 .row div img {
     height: 235px;
@@ -543,4 +531,40 @@ body {
     color: white;
     font-size: 14px;
     margin: 0 10px;
+}
+
+/* Visualizzazione spotify-md */
+
+@media all and (min-width: 1125px) and (max-width: 1634px) {
+    #main-nav ul {
+        max-width: 760px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Visualizzazione Tablet (s) */
+
+@media all and (min-width: 870px) and (max-width: 1124px) {
+    #main-nav ul {
+        max-width: 530px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #nav-player {
+        width: 45%;
+    }
+}
+
+/* Visualizzazione Mobile (xs) */
+
+@media all and (max-width: 869px) {
+    #main-nav ul {
+        max-width: 530px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #nav-player {
+        width: 45%;
+    }
 }
