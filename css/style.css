@@ -13,15 +13,15 @@ body {
 }
 
 /* scrollbar */
-#contenuto_principale::-webkit-scrollbar {
+#contenuto_principale::-webkit-scrollbar, #list-name-playlist::-webkit-scrollbar {
 	width:  10px;
 }
 
-#contenuto_principale::-webkit-scrollbar-thumb {
+#contenuto_principale::-webkit-scrollbar-thumb, #list-name-playlist::-webkit-scrollbar-thumb {
     background: #606060;
 }
 
-#contenuto_principale::-webkit-scrollbar-thumb:hover {
+#contenuto_principale::-webkit-scrollbar-thumb:hover, #list-name-playlist::-webkit-scrollbar-thumb:hover {
     background: #c1c1c1;
 }
 
@@ -37,18 +37,21 @@ body {
     height: 100%;
     width: 300px;
     background-color: #000000;
-    padding: 20px 0 0 20px;
+    padding-left: 20px;
     font-size: 14px;
+    overflow: hidden;
 }
 
 /* aside-top */
 .aside-top {
     height: calc(100vh - 235px);
+    overflow-y: clip;
 }
 
 /* logo */
 #logo {
     width: 170px;
+    margin-top: 20px;
 }
 
 /* nav-menu */
@@ -140,7 +143,8 @@ body {
 
 /* lista_nome_playlist */
 #list-name-playlist {
-    overflow: auto;
+    height: 210px;
+    overflow-y: scroll;
     margin-top: 25px;
 }
 
@@ -704,5 +708,15 @@ body {
 
     #recently-played, #musica-suggerita, #artisti-popolari {
         margin: 30px 0 0 30px;
+    }
+}
+
+@media all and (max-height: 650px) {
+    #footer_menu {
+        display: none;
+    }
+
+    .aside-top {
+        height: 100vh;
     }
 }
