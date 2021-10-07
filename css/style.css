@@ -499,6 +499,9 @@ body {
 }
 
 .progressbar {
+    display: flex;
+    align-items: center;
+    max-height: 6px;
     background-color: #5a5a5a;
     border-radius: 3px;
     width: 80%;
@@ -512,10 +515,21 @@ body {
 }
 
 .progressbar:hover > div {
-    /* display: flex;
-    justify-content: flex-end; */
     background-color: #adff2f;
-    /* content: '\U+26AB'; */
+}
+
+.fa-circle {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.progressbar span i {
+    display: none;
+}
+
+.progressbar:hover span i {
+    display: block;
+    margin-left: -3px;
 }
 
 #nav-player-down span {
@@ -592,7 +606,6 @@ body {
     /* footer */
     #volume {
         width: 250px;
-        flex-shrink: 3;
     }
 
     #volume a {
@@ -601,12 +614,10 @@ body {
 
     #nav-player {
         width: auto;
-        flex-shrink: 6;
     }
 
     #brano {
         width: auto;
-        flex-shrink: 3;
     }
 
     #brano a div {
