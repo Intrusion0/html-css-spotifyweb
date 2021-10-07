@@ -561,11 +561,24 @@ body {
 
 /* Visualizzazione spotify-md */
 
-@media all and (min-width: 1125px) and (max-width: 1634px) {
+@media all and (min-width: 1125px) and (max-width: 1540px) {
     #main-nav ul {
-        width: auto;
+        width: 700px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .row.first {
+        flex-wrap: wrap;
+    }
+
+    .row div img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .container_img {
+        width: 15vw;
     }
 }
 
@@ -573,9 +586,22 @@ body {
 
 @media all and (min-width: 870px) and (max-width: 1124px) {
     #main-nav ul {
-        width: auto;
+        width: 530px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .row.first {
+        flex-wrap: wrap;
+    }
+
+    .row div img {
+        height: 27vw;
+        width: 27vw;
+    }
+
+    .container_img {
+        width: 27vw;
     }
 
     #nav-player {
