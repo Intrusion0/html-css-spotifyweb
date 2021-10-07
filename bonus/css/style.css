@@ -205,6 +205,7 @@ body {
 
 #profile a {
     color: white;
+    animation: color 10s infinite;
 }
 
 #profile img {
@@ -262,6 +263,8 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 100px;
+    animation: all 2s linear;
+    animation-name: fadein;
 }
 
 #main-nav ul {
@@ -301,6 +304,8 @@ body {
 #recently-played, #musica-suggerita, #artisti-popolari {
     width: calc(100% - 50px);
     margin: 30px 0 0 20px;
+    animation: all 2s linear;
+    animation-name: fadein;
 }
 
 #artisti-popolari {
@@ -810,3 +815,48 @@ body {
         width: 20%;
     }
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+ @keyframes color {
+    0% {
+        color: white;
+    }
+    10% {
+        color: rgb(255, 0, 0);
+    }
+    20% {
+        color: rgb(255, 217, 0);
+    }
+    30% {
+        color: rgb(0, 255, 34);
+    }
+    40% {
+        color: rgb(0, 255, 234);
+    }
+    50% {
+        color: rgb(0, 52, 221);
+    }
+    60% {
+        color: rgb(153, 0, 255);
+    }
+    70% {
+        color: rgb(199, 16, 255);
+    }
+    80% {
+        color: rgb(145, 0, 60);
+    }
+    90% {
+        color: rgb(61, 55, 41);
+    }
+    100% {
+        color: rgb(202, 202, 202);
+    }
+ }
