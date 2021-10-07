@@ -325,13 +325,12 @@ body {
 .row {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
     width: 100%;
 }
 
 .container_img {
     position: relative;
-    width: 235px;
+    width: auto;
     text-align: center;
 }
 
@@ -372,7 +371,7 @@ body {
     justify-content: stretch;
     align-items: center;
     margin-top: 30px;
-    width: 235px;
+    width: auto;
     margin-right: 20px;
 }
 
@@ -381,8 +380,8 @@ body {
 }
 
 .row div img {
-    height: 235px;
-    width: 235px;
+    height: 12vw;
+    width: 12vw;
 }
 
 .row div h3 {
@@ -602,7 +601,7 @@ body {
     }
 
     #main-nav ul {
-        width: auto;
+        width: 70vw;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -708,6 +707,19 @@ body {
 
     #recently-played, #musica-suggerita, #artisti-popolari {
         margin: 30px 0 0 30px;
+    }
+
+    .row div img {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .container_img {
+        width: 40vw;
     }
 }
 
