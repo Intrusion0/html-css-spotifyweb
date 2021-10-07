@@ -519,6 +519,8 @@ body {
 
 .progressbar:hover > div {
     background-color: #adff2f;
+    animation: 4s linear;
+    animation-name: progress;
 }
 
 .fa-circle {
@@ -775,5 +777,36 @@ body {
 
     .aside-top {
         height: 100vh;
+    }
+}
+
+/* BONUS HEIGHT */
+
+@media all and (max-height: 199px) {
+    #upgrade {
+        display: none;
+    }
+}
+
+/* ANIMAZIONI BONUS */
+
+@keyframes progress {
+    0% {
+        width: 20%;
+    }
+    25% {
+        width: 40%;
+    }
+    50% {
+        width: 60%;
+    }
+    75% {
+        width: 80%;
+    }
+    95% {
+        width: 100%;
+    }
+    100% {
+        width: 20%;
     }
 }
