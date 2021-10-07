@@ -618,12 +618,12 @@ body {
 
 @media all and (max-width: 869px) {
     #menu {
-        width: 45px;
-        padding: 0 0 0 7px;
+        width: 70px;
+        padding: 0 15px;
     }
 
     #contenuto_principale, #upgrade {
-        width: calc(100% - 45px);
+        width: calc(100% - 70px);
     }
 
     #main-nav ul {
@@ -668,12 +668,16 @@ body {
     /* sezione menu sx */
 
     #logo {
-        width: 75%;
+        width: 95%;
         margin-top: 10px;
     }
 
     #nav-menu {
         margin-top: 20px;
+    }
+
+    #nav-menu ul li a img {
+        width: 35px;
     }
 
     #nav-menu ul li:first-child {
@@ -736,8 +740,8 @@ body {
     }
 
     .row div img {
-        height: 40vw;
-        width: 40vw;
+        height: 38vw;
+        width: 38vw;
     }
 
     .row {
@@ -745,7 +749,7 @@ body {
     }
 
     .container_img {
-        width: 40vw;
+        width: 38vw;
     }
 }
 
